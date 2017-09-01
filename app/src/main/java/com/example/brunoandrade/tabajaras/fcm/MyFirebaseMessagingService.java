@@ -1,13 +1,14 @@
 package com.example.brunoandrade.tabajaras.fcm;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.example.brunoandrade.tabajaras.model.Data;
 import com.example.brunoandrade.tabajaras.model.DataMessageRequest;
 import com.example.brunoandrade.tabajaras.model.VendasM;
-import com.example.brunoandrade.tabajaras.ui.NotificationsActivity;
+import com.example.brunoandrade.tabajaras.ui.MainActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.google.gson.Gson;
@@ -23,6 +24,7 @@ import java.util.List;
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private String TAG = MyFirebaseMessagingService.class.getName();
+    public static final String FCM_INTENT_FILTER = "FCM_INTENT_FILTER";
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
@@ -31,9 +33,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 DataMessageRequest dataMessageRequest = getDataMassageObject(remoteMessage);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("data", dataMessageRequest);
-                Intent intent = new Intent(getApplicationContext(), NotificationsActivity.class);
+                Intent intent = new Intent(FCM_INTENT_FILTER);
                 intent.putExtras(bundle);
-                startActivity(intent);
+                sendBroadcast(intent);
             }
         } catch (Exception e){
             Log.e(TAG,e.getMessage());

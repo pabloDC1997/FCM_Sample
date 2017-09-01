@@ -10,13 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.brunoandrade.tabajaras.ui.MainActivity">
 
-    <Button
-        android:id="@+id/btn_teste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="BTN TESTE"/>
+    <!--<Button-->
+        <!--android:id="@+id/btn_teste"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="BTN TESTE"/>-->
 
 </RelativeLayout>

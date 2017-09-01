@@ -23,6 +23,5 @@ public class MyFirebaseInstanceIdService extends FirebaseInstanceIdService {
             e.printStackTrace();
         }
         Log.d("Firebase token", token);
-        
     }
 }
