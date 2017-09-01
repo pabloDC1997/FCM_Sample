@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "447927589065",
+    "firebase_url": "https://tabajaras-3b790.firebaseio.com",
+    "project_id": "tabajaras-3b790",
+    "storage_bucket": "tabajaras-3b790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447927589065:android:02f1799d4db2e52a",
+        "android_client_info": {
+          "package_name": "com.example.brunoandrade.tabajaras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447927589065-e0pshhalbudmei4cil136k6efbkptjf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLM9jcHnyq8iSz_bqEepKcv5Z5xcGHDU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
