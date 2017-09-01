@@ -43,8 +43,25 @@ public class MainActivity extends AppCompatActivity{
         MenuItemCompat.setActionView(item, R.layout.actionbar_menu_layout);
         RelativeLayout rlMenu = (RelativeLayout)   MenuItemCompat.getActionView(item);
         mRlMenu = rlMenu;
+        ImageView imageView = (ImageView) mRlMenu.findViewById(R.id.image_view_example);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),NotificationsActivity.class));
+            }
+        });
         updateNotificationsMenu();
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.badge:
+
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private BroadcastReceiver myReceiver = new BroadcastReceiver() {
