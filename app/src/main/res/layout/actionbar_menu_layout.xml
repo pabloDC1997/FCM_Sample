@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="right">
+
+    <ImageView
+        android:id="@+id/image_view_example"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/notifications_button"
+        android:padding="7dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/actionbar_notifcation_textview"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circle_drawable"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:text="1" />
+
+</RelativeLayout>
